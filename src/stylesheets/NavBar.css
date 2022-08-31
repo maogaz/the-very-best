@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  background-color: rgba(42, 56, 65, 0.82);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #292929;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+nav a {
+  position: relative;
+  text-align: center;
+  color: #949494;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.2s ease color;
+}
+
+nav a:hover {
+  color: #fff;
+}
