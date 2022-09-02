@@ -12,7 +12,7 @@ body {
 nav {
   background-color: #292929;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
 }
 
 nav a {
@@ -28,4 +28,8 @@ nav a {
 
 nav a:hover {
   color: #fff;
+}
+
+.shoping-cart {
+  margin: 5px 10px;
 }
