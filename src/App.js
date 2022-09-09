@@ -6,10 +6,12 @@ function App(){
         <div>
         <NavBar />
         <ItemListContainer 
-            greeting='Este es un texto de ejemplo'
+            name='Nonagon Infinity'
+            price="21.000"
+            image= {require(`./media/example-item-1.jpeg`)}
+            stock={10}
         />
         </div>
-
       );
 }
 
