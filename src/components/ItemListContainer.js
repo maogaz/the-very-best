@@ -1,7 +1,6 @@
-import Item from './Item';
 import ItemList from './ItemList';
 
-function ItemListContainer({name, price, image, stock}){
+function ItemListContainer(){
     return (
         <div >
             <ItemList />

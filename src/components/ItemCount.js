@@ -1,15 +1,15 @@
 import '../stylesheets/ItemCount.css'
 
-function ItemCount({name, price, image, stock}){
+function ItemCount({stock, key}){
 
     const add_one_item = () => {
         if(document.getElementById("input-item-number").value < stock){
             document.getElementById("input-item-number").value =  parseInt(document.getElementById("input-item-number").value) + 1;
-            if(document.getElementById("input-item-number").value == stock){
+            if(document.getElementById("input-item-number").value === stock){
                 document.getElementById("add-one-item").disabled = true;
             }
         }
-        if(document.getElementById("input-item-number").value == 2 ){
+        if(document.getElementById("input-item-number").value === 2 ){
             document.getElementById("remove-number-item").disabled = false;
         }
     }
@@ -17,11 +17,11 @@ function ItemCount({name, price, image, stock}){
     const remove_one_item = () => {
         if(document.getElementById("input-item-number").value > 1 ){
             document.getElementById("input-item-number").value =  parseInt(document.getElementById("input-item-number").value) - 1;
-            if(document.getElementById("input-item-number").value == 1 ){
+            if(document.getElementById("input-item-number").value === 1 ){
                 document.getElementById("remove-number-item").disabled = true;
             }
         }
-        if(document.getElementById("input-item-number").value == stock - 1 ){
+        if(document.getElementById("input-item-number").value === stock - 1 ){
             document.getElementById("add-one-item").disabled = false;
         }
     }

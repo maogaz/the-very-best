@@ -1,7 +1,7 @@
 import '../stylesheets/ItemCount.css'
 import ItemCount from './ItemCount';
 
-function Item({name, price, image, stock}){
+function Item({name, price, image, stock, key}){
 
     return (
         <div className='items-container'>
@@ -16,7 +16,8 @@ function Item({name, price, image, stock}){
                     <h2>{name}</h2>
                 </div>
                 <ItemCount 
-                stock={stock}
+                    stock={stock}
+                    key= {key}
                 />
                 <div className='add-to-cart-button'>
                     <a href="#">
