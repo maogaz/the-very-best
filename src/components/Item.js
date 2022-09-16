@@ -1,5 +1,6 @@
 import '../stylesheets/ItemCount.css'
 import ItemCount from './ItemCount';
+import ItemDetailContainer from './ItemDetailContainer';
 
 function Item({name, price, image, stock, key}){
 
@@ -14,6 +15,9 @@ function Item({name, price, image, stock, key}){
                 </div>
                 <div className='name'>
                     <h2>{name}</h2>
+                </div>
+                <div>
+                    <ItemDetailContainer description={"Descripcion de ejemplo"} />
                 </div>
                 <ItemCount 
                     stock={stock}
